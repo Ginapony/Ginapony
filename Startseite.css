@@ -1,0 +1,241 @@
+/* Seite */
+body {
+
+    background-color: #192437;
+
+    margin: 0;
+
+    overflow-x: hidden;
+
+}
+
+/* Logo */
+img {
+
+    position: absolute;
+
+    top: 35%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 50%;
+
+    height: auto;
+
+}
+
+/* Überschrift */
+h1 {
+
+    color: white;
+
+    font-size: 6vw;
+
+    position: absolute;
+
+    left: 50%;
+    top: 83%;
+
+    transform: translate(-50%, -50%);
+
+    white-space: nowrap;
+
+}
+
+/* Seitenmenü */
+.off-screen-menu {
+
+    background-color: #222222;
+
+    height: 100vh;
+
+    width: 350px;
+
+    position: fixed;
+
+    top: 0;
+
+    right: -350px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    text-align: left;
+
+    padding-top: 120px;
+
+    padding-left: 30px;
+
+    transition: right 0.3s ease;
+
+    z-index: 999;
+
+}
+
+/* Menü sichtbar */
+.off-screen-menu.active {
+
+    right: 0;
+
+}
+
+/* Hamburger Menü */
+.ham-menu {
+
+    height: 50px;
+
+    width: 40px;
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 20px;
+
+    z-index: 1000;
+
+    cursor: pointer;
+
+}
+
+/* Linien */
+.ham-menu span {
+
+    height: 5px;
+
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    position: absolute;
+
+    left: 0;
+
+    transition: .3s ease;
+
+}
+
+/* Positionen */
+.ham-menu span:nth-child(1) {
+
+    top: 10px;
+
+}
+
+.ham-menu span:nth-child(2) {
+
+    top: 22px;
+
+}
+
+.ham-menu span:nth-child(3) {
+
+    top: 34px;
+
+}
+
+/* Animation zu X */
+.ham-menu.active span:nth-child(1) {
+
+    top: 22px;
+
+    transform: rotate(45deg);
+
+}
+
+.ham-menu.active span:nth-child(2) {
+
+    opacity: 0;
+
+}
+
+.ham-menu.active span:nth-child(3) {
+
+    top: 22px;
+
+    transform: rotate(-45deg);
+
+}
+
+/* Dropdown Titel */
+.dropdown-title,
+.dropdown-title-games {
+
+    color: white;
+
+    font-size: 35px;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    margin-bottom: 15px;
+
+    margin-top: 20px;
+
+}
+
+/* Dropdown Inhalte */
+.nav-div-1,
+.nav-div-games {
+
+    list-style: none;
+
+    padding-left: 0;
+
+    margin: 0;
+
+    width: 100%;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height 0.4s ease;
+
+}
+
+/* Wenn geöffnet */
+.nav-div-1.active,
+.nav-div-games.active {
+
+    max-height: 500px;
+
+}
+
+/* Informationen Bereich */
+.nav-div-2 {
+
+    list-style: none;
+
+    padding-left: 0;
+
+    margin-top: 40px;
+
+}
+
+/* Listen */
+li {
+
+    color: white;
+
+    font-size: 28px;
+
+    margin: 15px 0;
+
+}
+
+/* Links */
+a {
+
+    text-decoration: none;
+
+    color: white;
+
+}

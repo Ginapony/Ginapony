@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemische Experimente</title>
+
+    <link rel="stylesheet" href="Startseite.css">
+</head>
+
+<body>
+
+<header>
+
+    <img src="abschlussarbeit_glas.png" class="Logo">
+
+    <h1>Chemische Experimente</h1>
+
+</header>
+
+<!-- Seitenmenü -->
+<div class="off-screen-menu">
+
+    <!-- Versuche Dropdown -->
+    <div class="dropdown-title">
+         Versuche 
+    </div>
+
+    <ul class="nav-div-1">
+
+        <li>
+            <a href="Versuche/Chemilumineszenz mit Luminol.html">
+                Chemilumineszenz mit Luminol
+            </a>
+        </li>
+
+        <li>
+            <a href="Versuche/Elefantenzahnpasta.html">
+                Elefantenzahnpasta
+            </a>
+        </li>
+
+        <li>
+            <a href="Versuche/Mehlstaubexplosion.html">
+                Mehlstaubexplosion
+            </a>
+        </li>
+
+        <li>
+            <a href="Versuche/Methanblasen-Explosion.html">
+                Methanblasen-Explosion
+            </a>
+        </li>
+
+        <li>
+            <a href="Versuche/Lycopodium-Blitz.html">
+                Lycopodium-Blitz
+            </a>
+        </li>
+
+    </ul>
+
+    <!-- Games Dropdown -->
+    <div class="dropdown-title-games">
+         Games 
+    </div>
+
+    <ul class="nav-div-games">
+
+        <li>
+            <a href="java.html">
+                Slots
+            </a>
+        </li>
+
+        <li>
+            <a href="RPS.html">
+                Schere Stein Papier
+            </a>
+        </li>
+
+        <li>
+            <a href="Kniffel.html">
+                Kniffel
+            </a>
+        </li>
+
+    </ul>
+
+    <!-- Informationen -->
+    <ul class="nav-div-2">
+
+        <li>
+            <a href="Informationen.html">
+                Information Live Vorstellung
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Hamburger Menü -->
+<div class="ham-menu">
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+<script>
+
+/* Hamburger Menü */
+
+const hamMenu = document.querySelector('.ham-menu');
+
+const offscreenMenu = document.querySelector('.off-screen-menu');
+
+hamMenu.addEventListener('click', () => {
+
+    hamMenu.classList.toggle('active');
+
+    offscreenMenu.classList.toggle('active');
+
+});
+
+/* Versuche Dropdown */
+
+const dropdownTitle = document.querySelector('.dropdown-title');
+
+const dropdownMenu = document.querySelector('.nav-div-1');
+
+dropdownTitle.addEventListener('click', () => {
+
+    dropdownMenu.classList.toggle('active');
+
+});
+
+/* Games Dropdown */
+
+const dropdownTitleGames = document.querySelector('.dropdown-title-games');
+
+const dropdownMenuGames = document.querySelector('.nav-div-games');
+
+dropdownTitleGames.addEventListener('click', () => {
+
+    dropdownMenuGames.classList.toggle('active');
+
+});
+
+</script>
+
+</body>
+</html>

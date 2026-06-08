@@ -1,0 +1,60 @@
+body {
+    background-color: #192437;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    height: 122vh;
+}
+
+.pdf {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (min-width: 0px ) {
+    div {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    height: 50vh;
+}
+
+}
+
+@media (min-width: 1024px ) {
+    div {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    height: 122vh;
+}
+
+}
+
+
+img {
+  position: absolute;
+  top: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+
+ 
+  width: 25%;              
+  height: auto;            
+}
